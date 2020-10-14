@@ -16,6 +16,10 @@ public class EmployeePayrollService {
 		employeePayrollList = new ArrayList<>();
 	}
 
+	public EmployeePayrollService(List<EmployeePayrollData> asList) {
+		
+	}
+
 	public static void main(String[] args) {
 		EmployeePayrollService employeePayrollService = new EmployeePayrollService();
 		Scanner consoleInputReader = new Scanner(System.in);
