@@ -38,7 +38,7 @@ public class EmployeePayrollFileIOService {
 	public long countEntries() {
 		long entries = 0;
 		try {
-			entries = Files.lines(new File("payroll-file.txt").toPath()).count();
+			entries = Files.lines(new File(PAYROLL_FILE_NAME).toPath()).count();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
